@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>My Book Site</title>
+
+</head>
+
+<body>
+
+    <img src="https://seeklogo.com/images/S/sun-book-logo-E393C7C6AC-seeklogo.com.png" id="logo">
+    <h1>My Book Site</h1>
+    <button><a href="index.html">Home</a></button>
+    <button onclick="renderAddBookForm()">Add book</button>
+    <div id="search_form">
+        <form id="search_book" action="#">
+            Search book: <input type="text" id="book_title" name="book_title"><br>
+            <input id="submit_button"type="button" onclick="renderBookBySearch(document.getElementById('book_title').value)"
+                value="Submit">
+        </form>
+
+        
+    </div>
+    <div class="flex-container" id="all_books"></div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
