@@ -116,8 +116,7 @@ function renderBookBySearch(bookTitle) {
 
 
 function deleteBookById(bookId) {
-    console.log(bookId);
-
+ 
     var requestOptions = {
         method: 'POST',
     };
@@ -156,15 +155,11 @@ function renderAddBookForm() {
 
     placeholder.innerHTML = output;
 
-
-    console.log("Form is printed");
-
 }
 
 
 
 function addBook(title, author, year, cover, shortDescription, longDescription) {
-    console.log('title:' + author);
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
     var raw = JSON.stringify({
