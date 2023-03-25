@@ -60,10 +60,9 @@ function renderBookPage(bookTitle) {
     fetch('http://localhost:8080/books/search/title/' + bookTitle)
         .then(response => response.json())
         .then(data => {
+            
             let placeholder = document.getElementById("all_books");
             let out = "";
-            console.log(bookTitle);
-            console.log(data);
 
             for (let book of data) {
                 out += `
